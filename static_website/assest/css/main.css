@@ -1,0 +1,146 @@
+@font-face {
+    font-family: inter-light;
+    src: url("../fonts/Inter-Light.ttf");
+}
+
+@font-face {
+    font-family: inter-regular;
+    src: url("../fonts/Inter-Regular.ttf");
+}
+
+@font-face {
+    font-family: inter-semibold;
+    src: url("../fonts/Inter-SemiBold.ttf");
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html,body{
+    background-color: #e3e3e3;
+    height: 100%;
+    width: 100%;
+    font-family: inter-regular;
+}
+
+.header-table{
+    display: table;
+    width: 100%;
+}
+
+.header-table-cell {
+    background-color: white;
+    display: table-cell;
+    width: 100%;
+    padding: 10px;
+}
+
+.header-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.header-content-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    user-select: none;
+    gap: 10px;
+}
+
+.click-event:hover{
+    cursor: pointer;
+    opacity: 0.75;
+    user-select: none;
+}
+
+.click-event:active {
+    transform: translateY(2px);
+    transition: transform 0.1s;
+    user-select: none;
+}
+
+button{
+    padding: 12px 60px;
+    border-radius: 50px;
+    font-family: inter-semibold;
+    font-size: 16px;
+    user-select: none;
+    color: white;
+    border: 2px solid #FF001F;
+    background-color: #FF001F;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.75;
+    user-select: none;
+}
+button:active {
+    transform: translateY(2px);
+    transition: transform 0.1s;
+    user-select: none;
+}
+
+button.filled{
+    background-color: #FF001F;
+    color: white;
+}
+
+button.outline {
+    background-color: transparent;
+    border: 2px solid #FF001F;
+    color: #FF001F;
+}
+
+button.o.ghost {
+    background-color: transparent;
+    border: 2px solid transparent;
+    color: #FF001F;
+}
+
+.header-logo {
+    border-radius: 50%;
+    height: 65px;
+    width: 65px;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.header-content span:nth-child(1){
+    font-size: 22px;
+    font-family: inter-semibold;
+    color:#FF001F;
+}
+
+.header-content span:nth-child(2) {
+    font-size: 18px;
+    font-family: inter-regular;
+    color: #2E2E2E;
+}
+
+a{
+    text-decoration: none;
+    color: #232323;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #FF001F;
+}
+
+.nav-container{
+    display: flex;
+    gap:10px;
+}
+
+

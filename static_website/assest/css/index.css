@@ -1,0 +1,76 @@
+.welcome-container{
+    width: 100%;
+    height: 70%;
+    background-image: url("../images/arkaplan.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.welcome-filter{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0,0.5);
+    position: relative;
+}
+
+.welcome-content-container{
+    position: absolute;/*bulunduğu container içinde standart katman değil,bir üst katmana geçirir,serbest bırakır ve daha sonra konumlandırırız*/
+    bottom: 10%;
+    width: 40%;
+    left: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.welcome-content-container span:nth-child(1){
+    font-family: inter-regular;
+    font-size: 26px;
+    color: white;
+}
+
+.welcome-content-container span:nth-child(2) {
+    font-family: inter-light;
+    font-size: 16px;
+    margin-bottom: 4px;
+    color: white;
+    line-height: 22px;
+}
+
+.broadcast-banner-container {
+    background-image: linear-gradient(90.45deg, #FF001F 0%, #470009 100%);
+    font-family: inter-semibold;
+    justify-content: center;
+    flex-direction: "row";
+    align-items: center;
+    user-select: none;
+    font-size: 20px;
+    color: white;
+    padding: 40px;
+    display: flex;
+    gap: 10px;
+}
+
+
+.broadcast-indicator {
+    background-color: transparent;
+    border: 2px solid white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    height: 25px;
+    width: 25px;
+}
+
+.broadcast-indicator div {
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    height: 18px;
+    width: 18px;
+}
+
