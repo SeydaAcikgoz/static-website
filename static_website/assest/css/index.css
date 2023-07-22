@@ -1,31 +1,32 @@
-.welcome-container{
-    width: 100%;
-    height: 70%;
+.welcome-container {
     background-image: url("../images/arkaplan.png");
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
-}
-
-.welcome-filter{
+    background-size: cover;
+    user-select: none;
+    height: 70%;
     width: 100%;
-    height: 100%;
-    background-color: rgb(0,0,0,0.5);
-    position: relative;
 }
 
-.welcome-content-container{
-    position: absolute;/*bulunduğu container içinde standart katman değil,bir üst katmana geçirir,serbest bırakır ve daha sonra konumlandırırız*/
+.welcome-filter {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.welcome-content-container {
+    align-items: flex-start;
+    flex-direction: column;
+    position: absolute;
+    display: flex;
     bottom: 10%;
     width: 40%;
     left: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     gap: 20px;
 }
 
-.welcome-content-container span:nth-child(1){
+.welcome-content-container span:nth-child(1) {
     font-family: inter-regular;
     font-size: 26px;
     color: white;
@@ -33,10 +34,10 @@
 
 .welcome-content-container span:nth-child(2) {
     font-family: inter-light;
-    font-size: 16px;
     margin-bottom: 4px;
-    color: white;
     line-height: 22px;
+    font-size: 16px;
+    color: white;
 }
 
 .broadcast-banner-container {
@@ -52,7 +53,6 @@
     display: flex;
     gap: 10px;
 }
-
 
 .broadcast-indicator {
     background-color: transparent;
@@ -72,5 +72,75 @@
     position: absolute;
     height: 18px;
     width: 18px;
+}
+
+.broadcast-indicator:before {
+    content: "";
+    background: white;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: broadcast-anim;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    transition: ease-in-out animation;
+}
+
+@keyframes broadcast-anim {
+    0% {
+        height: 10px;
+        width: 10px;
+    }
+
+    100% {
+        height: 40px;
+        width: 40px;
+        background: rgba(255, 255, 255, 0);
+    }
+}
+
+.what-is-caycore-image {
+    border-radius: 40px;
+    height: 300px;
+}
+
+.what-is-caycore-content-container p {
+    text-align: justify;
+}
+
+.broadcaster-component-container {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+}
+
+.broadcaster-component-content-container {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+
+.broadcaster-component-content-container span:nth-child(1) {
+    font-family: inter-bold;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.broadcaster-component-content-container span:nth-child(2) {
+    font-family: inter-medium;
+    font-size: 18px;
+    color: #737373;
+}
+
+.broadcaster-component-profile-photo {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
 }
 
