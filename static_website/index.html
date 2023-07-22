@@ -1,110 +1,147 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./assest/css/main.css">
-    <link rel="stylesheet" href="./assest/css/index.css">
+    <meta charset="utf-8" />
+    <title>Çay Core</title>
+    <link rel="icon" type="image/png" href="/assest/images/logo.png">
+    <link rel="stylesheet" href="./assest/css/main.css" />
+    <link rel="stylesheet" href="./assest/css/index.css" />
 </head>
+
 <body>
-    
-    <div 
-        class="header-table"
-    >
-        <div 
-            class="header-table-cell"
-        >
-            <div 
-                class="header-container"
-            >
-            <div
-            class="header-content-container click-event"
-            onclick="window.location.href='index.html'"
-            ><!--logonun bulunduğu kısma tıklayınca da anasayfaya gider-->
-                <img 
-                    src="./assest/images/logo.png" 
-                    class="header-logo"
-                    alt=""
-                >
-                <div
-                    class="header-content"
-                >
-                    <span>
-                        Çay Core
-                    </span>
-                    <span>
-                        Kod demleyelim...
-                    </span>
+    <div class="header-table">
+        <div class="header-table-cell">
+            <div class="header-container">
+                <div class="header-content-container click-event" onclick="window.location.href='/index.html'">
+                    <img src="./assest/images/logo.png" class="header-logo" />
+                    <div class="header-content">
+                        <span>
+                            Çay Core
+                        </span>
+                        <span>
+                            Code demleyelim...
+                        </span>
+                    </div>
                 </div>
-               
-            </div>
-            <div
-                class="nav-container"
-            >
-                <a 
-                    id="index"
-                    href="index.html"
-                    class="click-event"
-                >
-                    Ana Sayfa
-                </a>
-
-                <a 
-                    id="aboutus"
-                    href="aboutus.html"
-                    class="click-event"
-                >
-                    Hakkımızda
-                </a>
-
-                <a 
-                    id="contact"
-                    href="contact.html"
-                    class="click-event"
-                >
-                    İletişim
-                </a>
-            </div>
+                <div class="nav-container">
+                    <a id="index" href="/index.html" class="click-event">
+                        Ana Sayfa
+                    </a>
+                    <a id="aboutus" href="/aboutus.html" class="click-event">
+                        Hakkımızda
+                    </a>
+                    <a id="contact" href="/contact.html" class="click-event">
+                        İletişim
+                    </a>
+                </div>
+                <div class="mobile-menu-button" onclick="toggleMenu()">
+                    <i class="fas fa-bars fa-xl"></i>
+                </div>
             </div>
         </div>
     </div>
-    <div 
-        class="welcome-container"
-    >
-        <div
-            class="welcome-filter"
-        >
-            <div 
-                class="welcome-content-container"
-            >
-                <span 
-                    class="welcome-title"
-                >
+    <div class="welcome-container">
+        <div class="welcome-filter">
+            <div class="welcome-content-container">
+                <span class="welcome-title">
                     Sıfırdan Geliştirici Olmak
                 </span>
                 <span class="welcome-content">
-                    Her hafta Cumartesi günü akşam saat 19.00-21.00 arası "Sıfırdan Geliştirici Olmak" konulu eğitimimiz düzenlenmektedir.Sizleri de aramızda görmekten memnuniyet duyarız.
+                    Her hafta Cumartesi günü akşam saat 19:00 - 21:00 arası
+                    “Sıfırdan Geliştirici Olmak” konulu eğitimimiz düzenlenmektedir.
+                    Sizleri de aramızda görmekten memnuniyet duyarız.
                 </span>
-                <button
-                    class="outline"
-                >
+                <button class="filled">
                     Eğitime Git
                 </button>
             </div>
         </div>
-
     </div>
-
-     <div
-            class="broadcast-banner-container click-event"
-        >
-            <div class="broadcast-indicator">
+    <div class="broadcast-banner-container click-event">
+        <div class="broadcast-indicator">
             <div></div>
-            </div>Yayın akışını görüntüleyin. <img src="./assest/icons/chevron-right.svg" />
-
+        </div>Yayın akışını görüntüleyin. <img src="./assest/icons/chevron-right.svg" />
+    </div>
+    <div class="section-container">
+        <span class="section-title">Çay Core Nedir?</span>
+        <div class="section-content-container">
+            <img src="./assest/images/logo.png" class="what-is-caycore-image" />
+            <p>
+                Çay Core; NİBGAT® | Topluluğunun üretmiş olduğu bir
+                projedir. Proje kapsamı olarak “yayıncılık” ifade
+                etmektedir. Çeşitli sosyal medya ve yayıncılık
+                araçları ile NİBGAT® | Çekirdek ve NİBGAT® | Topluluk
+                faaliyetlerinin ekip içi görünümünün de yer aldığı,
+                samimi ve tamamı ile ekibin yer aldığı bir ortam.
+                Çeşitli etkinlikler, eğitimler, oyunlar, yazılım
+                geliştirme faaliyetlerinin yapıldığı hatta açık kaynak
+                olarak sunulduğu bir yerdir. Resmi faaliyetlerden daha
+                ziyade NİBGAT®’ın kamera arkası olarak da nitelendirilebilir.
+            </p>
         </div>
+    </div>
+    <div class="section-container">
+        <span class="section-title">Yayın Ekibi</span>
+        <div id="team" class="section-content-container">
+        </div>
+    </div>
+    <div class="footer-container" id="footer-container">
+        <img src="./assest/images/nlogo.png" class="footer-logo" />
+        <span id="copyright-text"></span>
+    </div>
+    <div class="side-menu-container" id="side-menu">
+        <div class="side-menu-filter" onclick="toggleMenu()"></div>
+        <div class="side-menu-content-container">
+            <div class="side-menu-header-container">
+                <span>
+                    Menü
+                </span>
+                <i class="fas fa-x" onclick="toggleMenu()"></i>
+            </div>
+            <div class="seperator side-menu-seperator"></div>
+            <a id="m-index" onclick="goTo('/index.html')" class="click-event">
+                Ana Sayfa
+            </a>
+            <a id="m-aboutus" onclick="goTo('/aboutus.html')" class="click-event">
+                Hakkımızda
+            </a>
+            <a id="m-contact" onclick="goTo('/contact.html')" class="click-event">
+                İletişim
+            </a>
+        </div>
+    </div>
+    <script src="./assest/js/main.js"></script>
     <script src="./assest/js/menu.js"></script>
+    <script>
+        fetch("https://caycore.nibgat.space/getTeam", {
+            "Access-Control-Allow-Origin": "*"
+        })
+            .then((res) => {
+                return res.json();
+            })
+            .then((res) => {
+                const teamElement = document.getElementById("team");
+                res.payload.forEach((item) => {
+                    teamElement.innerHTML += `
+                            <div class="broadcaster-component-container">
+                                <img
+                                    src="${item.profilePhotoURL}"
+                                    class="broadcaster-component-profile-photo"
+                                />
+                                <div class="broadcaster-component-content-container">
+                                    <span>${item.fullName}</span>
+                                    <span>${item.job}</span>
+                                </div>
+                            </div>
+                        `;
+                });
+            })
+            .catch((err) => {
+                alert(err.message);
+                console.error(err);
+            });
+    </script>
+    <script src="https://kit.fontawesome.com/6633b60749.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
